@@ -3,10 +3,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
-    color: green;
-}
-
 main{
     background-color: rgba(255, 255, 255, 0.144);
     box-shadow: 5px 5px 5px;
@@ -16,43 +12,86 @@ main{
     border-radius: 20px;
 }
 
-main::before {
-    background-image: url(escudo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: 600px;
-    background-position: center;
-    opacity: 0.2;
-    z-index: -1;
+a{ /*usando um ID em CSS */
+    text-align: center;
+    background-color: #cfcf5f42;
+    text-decoration: none;
 }
 
-h1#principal{ /*usando um ID em CSS */
-    text-align: center;
-    background-color: #93d94e42;
+a:visited{
+    color: aqua;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+h1::before{
+    content: '>>';
+}
+
+h1::after{
+    content: '<<';
 }
 
 h2{
     color: rgb(26, 73, 26);
+    
+}
+
+.titulo{
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.titulo:hover{
+    color: lightskyblue;
+    background-color: lightsalmon;
+    width: 400px;
 }
 
 .basico{
     color: rgb(4, 122, 122);
 }
 
+.basico:hover{
+    color: black;
+    background-color: darkcyan;
+}
+
 .Intermediario{
     color: rgb(110, 110, 8);
+}
+
+.Intermediario:hover{
+    background-color: lightgoldenrodyellow;
 }
 
 .Avancado{
     color: rgb(65, 5, 5);
 }
 
+.Avancado:hover{
+    background-color: lightyellow;
+}
+
 .destaque {
     background-color: brown;
+}
+
+.destaque:hover{
+    color: beige;
+    background-color:rgb(110, 110, 8);
+}
+
+.content{
+    background-color: #93D94E;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.content:hover{
+    background-color: chocolate;
+    color:crimson;
+    font-weight: bolder;
 }
