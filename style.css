@@ -1,34 +1,58 @@
-@charset "UTF-8";
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
 body{
-    background-image: linear-gradient(to right, #012626, #04BFAD, #038C7F, #027368, #01403A);
-}
-
-main{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #02a810a2;
-    width: 600px;
-    padding: 20px;
-    margin: auto;
+    background-image: linear-gradient(to right, #223240, #3B8C66, #367356, #60BF81, #93D94E);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color: #01403A;
+    color: green;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.144);
+    box-shadow: 5px 5px 5px;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main::before {
+    background-image: url(escudo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 600px;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+h1#principal{ /*usando um ID em CSS */
     text-align: center;
-    text-shadow: 1px 1px 0px #001f1cb6
+    background-color: #93d94e42;
 }
+
 h2{
-    color: #02bdaa;
+    color: rgb(26, 73, 26);
 }
 
-p{
-    text-align: justify;
+.basico{
+    color: rgb(4, 122, 122);
 }
 
+.Intermediario{
+    color: rgb(110, 110, 8);
+}
 
+.Avancado{
+    color: rgb(65, 5, 5);
+}
+
+.destaque {
+    background-color: brown;
+}
